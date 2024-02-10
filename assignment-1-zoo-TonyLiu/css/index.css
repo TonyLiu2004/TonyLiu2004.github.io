@@ -3,8 +3,8 @@ body {
     background-color: salmon;
     text-align: center;
     margin: 0;
-  }
-  
+}
+
   #title-container{
     background-image: url("../img/zoo-banner.jpg");
     background-repeat:no-repeat;
@@ -33,8 +33,8 @@ body {
   }
   
   .card-img{
-    max-width: 300px;
-    max-height: 500px;
+    width: 300px;
+    height: 350px;
     margin-bottom:10px;
   }
   
@@ -42,5 +42,4 @@ body {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-  
   }
