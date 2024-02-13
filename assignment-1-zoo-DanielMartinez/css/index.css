@@ -1,7 +1,54 @@
 body{
-	font-family: Comic Sans, sans-serif;
+	font-family: Lucida Handwriting, cursive;
 	background-color: red;
 	text-align: center;
 	margin: 0;
 }
+#titleContainer{
+	background-image: url("../pics/zooBanner.jpg");
+    	background-repeat:no-repeat;
+    	background-blend-mode: color;
+    	background-position:center;
+    	background-size: cover;
+    	text-align: center;
+    	padding:300px;
+    	margin:0px;
+}
+#mainTitle{
+	color: white;
+	background-color:rgba(0, 0, 0, 0.6);
+	margin: 0px;
+	padding: 20px;
+	font-size: 100px;
+}
+#subTitle{
+	color: white;
+	margin: 0px;
+	padding: 20px;
+	font-size: 50px;
+}
+.links{
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.animal{
+	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    	margin: 30px;
+}
 
+.animalName{
+	color: white;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.animalPic{
+	width: 500px;
+	height: 350px;
+}
