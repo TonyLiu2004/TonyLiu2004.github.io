@@ -1,0 +1,49 @@
+body{
+    background-color:rgb(248, 189, 130);
+    font-family: Lucida Handwriting, cursive;
+    margin:0;
+}
+#name{
+	font-size: 100px;
+	color: white;
+	text-align:center;
+	background-color: rgb(162,101,48);
+	padding: 10px;
+}
+#mainPic{
+	max-width:100vw;
+   	max-height:100vh;
+    	justify-content: center;
+    	border:10px solid rgb(162,101,48);
+    	margin:auto;
+    	display: block;
+    	margin-bottom:20px;
+}
+#desc{
+	 font-size:40px;
+    	text-align: left;
+    	margin-left:40px;
+    	margin-right:40px;
+}
+nav {
+    opacity:0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin:0px;
+    height:25px;
+    padding:0px;
+    padding-left:30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.4s ease;
+}   
+
+nav:hover{
+    opacity: 1;
+  }
+
+#back-button{
+    color:black;
+    margin:0px;
+    padding:0px;
+}
