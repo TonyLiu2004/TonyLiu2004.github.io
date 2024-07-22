@@ -4,6 +4,7 @@
     <title>TonyLiu2004.github.io</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- https://fontawesome.com/v4/icons/ -->
   </head>
   <body>
     <div id="left-container">
@@ -13,27 +14,75 @@
           <h1 id="title-h1">Tony Liu</h1>
         </div>
         <div id="info-container">
-          <p class="info-line"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> Software Engineer</p>
-          <p class="info-line"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i> Brooklyn, New York</p>
-          <p class="info-line"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i> Tony.liu404@gmail.com</p>
-          <p class="info-line"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i> (646)-575-4403</p>
-          <p class="info-line"><a href="https://docs.google.com/document/d/1Efy8k4YTjZ3_Q0kWlWjKJ6yWkEfkwm183SaSv2aN1Xk/edit?usp=sharing" target="_blank">Resume</a></p>
-          <p class="info-line"><a href="https://www.linkedin.com/in/tonyliu404" target="_blank">LinkedIn</a></p>
-          <p class="info-line"><a href="https://github.com/TonyLiu2004" target="_blank">Github</a></p>
+          <p class="info-line"><i class="fa fa-briefcase"></i> Aspiring Software Engineer</p>
+          <p class="info-line"><i class="fa fa-home"></i> Brooklyn, New York</p>
+          <p class="info-line"><i class="fa fa-envelope"></i> Tony.liu404@gmail.com</p>
+          <p class="info-line"><i class="fa fa-phone"></i> (646)-575-4403</p>
+          <p class="info-line"><i class="fa fa-external-link"></i><a href="https://docs.google.com/document/d/1Efy8k4YTjZ3_Q0kWlWjKJ6yWkEfkwm183SaSv2aN1Xk/edit?usp=sharing" target="_blank">Resume</a></p>
+          <p class="info-line"><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/tonyliu404" target="_blank">LinkedIn</a></p>
+          <p class="info-line"><i class="fa fa-github"></i><a href="https://github.com/TonyLiu2004" target="_blank">Github</a></p>
           
         </div>
       </div>
     </div>
     <div id="right-container">
       <nav id="navbar">
-        <p>1</p>
-        <p>2</p>
+        <p onclick="scrollToSection('about-me')">About Me</p>
+        <p onclick="scrollToSection('projects')">Projects</p>
         <p>3</p>
         <p>4</p>
       </nav>
       <div id="right-content">
+        <!-- ========================= -->
 
+        <div class="content-container">
+          <h1 class="content-heading" id="about-me">About Me</h1>
+          <p class="content-p">Hello! I'm Tony Liu, a motivated and enthusiastic Computer Science student with a passion for technology. 
+             I am currently pursuing my degree at Hunter College, on track to graduate in May 2026. I have experience
+             with full-stack software development with React.js, C++, Python, and Quantum Computing research. Looking for a role where I can grow
+             and learn from experienced professionals while contributing my skills and experiences.
+          </p>
+          <div class="bullet-points">
+            <li class="content-p">Fun Fact: I once built and showcased a <a href="https://codefest-97b85.web.app/" target="_blank">website</a> that can help plan entire vacations, 
+              including generating itineraries, suggesting activities, and even booking flights and hotels! 
+              This project not only sharpened my skills in AI and web development but also sparked my passion for 
+              creating practical and user-friendly software solutions.
+            </li>
+          </div>
+        </div>
+
+        <!-- ========================= -->
+
+        <div class="content-container">
+          <h1 class="content-heading" id="projects">Projects</h1>
+          <div class="project-container">
+            <div class="project-header">
+              <h3>Travel Itinerary Generator - Software Engineer</h3>
+              <h4>February 7, 2024</h4>
+            </div>
+            <p class="project-description">Developed a generative ai-based travel itinerary web application using the FERN (Firebase, Express.js, React.js, and Node.js) stack as part of Google mentorship program.</p>
+            <div class="bullet-points">
+              <li>Utilized Google Gemini for itinerary generation, Pexels for image integration, JsPDF and HTML2canvas for itinerary saving, and Amadeus for flight lookup.</li>
+              <li>Deployed using Google Cloud Functions and Firebase and implemented user security through Firebase authentication and backend security using Express.js and Node.js middleware.</li>
+            </div>
+            <img class="project-image" src="./assets/travel-itinerary-pic.PNG" alt="Travel Itinerary Generator" />
+          </div>
+        </div>
+
+        <!-- ========================= -->
       </div>
     </div>
+    <script>
+      function scrollToSection(t) {
+          const target = document.getElementById(t);
+          const offset = 70;
+
+          window.scrollTo({
+              top: target.offsetTop - offset,
+              behavior: 'smooth'
+          });
+      }
+
+    </script>
 </body>
 </html>
