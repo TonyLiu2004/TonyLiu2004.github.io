@@ -6,12 +6,14 @@ body{
 }
 #title-h1{
     text-align: center;
+    font-size: 40px;
+    margin:15px;
 }
 
 #left-container{
     width: 30%;
     background-color: #f0f0f0;
-    padding: 20px;
+
 }
 
 #right-container{
@@ -33,4 +35,47 @@ body{
 #right-content{
     padding-left:20px;
     padding-top:50px;
+}
+
+#profile-pic-container{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 228, 234);
+}
+
+#profile-pic{
+    padding-top:15px;
+    width:70%;
+    height:70%;
+}
+
+#info-container{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    padding-left:3%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.info-line{
+    margin:0px;
+    padding:10px;
+    font-size:18x;
+}
+
+.info-line i {
+    margin-right: 10px;
+}
+
+.info-line a {
+    text-decoration: none;
+}
+
+.info-line a:hover {
+    text-decoration: underline;
 }
