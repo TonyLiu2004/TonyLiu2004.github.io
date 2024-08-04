@@ -27,9 +27,9 @@
     </div>
     <div id="right-container">
       <nav id="navbar">
-        <p class="navbar" onclick="scrollToSection('about-me')">About Me</p>
-        <p class="navbar" onclick="scrollToSection('projects')">Projects</p>
-        <p class="navbar" onclick="scrollToSection('skills')">Skills</p>
+        <p class="navbar-item" onclick="scrollToSection('about-me')">About Me</p>
+        <p class="navbar-item" onclick="scrollToSection('projects')">Projects</p>
+        <p class="navbar-item" onclick="scrollToSection('skills')">Skills</p>
         <p>4</p>
       </nav>
       <div id="right-content">
@@ -72,20 +72,55 @@
 
         <div class="content-container">
           <h1 class="content-heading" id="projects">Projects</h1>
+          <!-- -->
+          <a href="https://codefest-97b85.web.app/" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>Travel Itinerary Generator - Software Engineer</h3>
+                <h4>February 7, 2024</h4>
+              </div>
+              <p class="project-description">A generative ai-based travel itinerary web application using the FERN (Firebase, Express.js, React.js, and Node.js) stack as part of Google mentorship program.</p>
+              <div class="bullet-points">
+                <li>Utilized Google Gemini for itinerary generation, Pexels for image integration, JsPDF and HTML2canvas for itinerary saving, and Amadeus for flight lookup.</li>
+                <li>Deployed using Google Cloud Functions and Firebase and implemented user security through Firebase authentication and backend security using Express.js and Node.js middleware.</li>
+              </div>
+              <img class="project-image" src="./assets/travel-itinerary-pic.PNG" alt="Travel Itinerary Generator" />
+            </div>
+          </a>
+          <!-- -->
+          <a href="https://nyc-events.onrender.com/" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>NYC Events Website - Software Engineering Lead</h3>
+                <h4>February 18, 2024 </h4>
+              </div>
+              <p class="project-description">A real-time event tracker map developed during a HackCUNY hackathon using Firebase and React. This website allows users to create posts for events in NYC and view all events via Google Maps. </p>
+              <div class="bullet-points">
+                <li>Integrated Google Maps API for location pinning, route planning, and real-time data visualization.</li>
+                <li>Implemented data management, user authentication, and user profile features using Firebase.</li>
+                <li>Led the project from planning to deployment, ensuring seamless user experience and backend functionality.</li>
+              </div>
+              <img class="project-image" src="./assets/NYC-Events-pic.PNG" alt="Travel Itinerary Generator" />
+            </div>
+          </div>
+        </a>
+        <!-- -->
+        <a href="https://league-hub.onrender.com/" target="_blank" class="project-link">
           <div class="project-container">
             <div class="project-header">
-              <h3>Travel Itinerary Generator - Software Engineer</h3>
-              <h4>February 7, 2024</h4>
+              <h3>Discussion Hub / Social Media Clone - Full Stack Developer</h3>
+              <h4>November 17, 2023</h4>
             </div>
-            <p class="project-description">Developed a generative ai-based travel itinerary web application using the FERN (Firebase, Express.js, React.js, and Node.js) stack as part of Google mentorship program.</p>
+            <p class="project-description">A dynamic discussion platform that alloqs users to interact through multimedia posts and a variety of engagement features. </p>
             <div class="bullet-points">
-              <li>Utilized Google Gemini for itinerary generation, Pexels for image integration, JsPDF and HTML2canvas for itinerary saving, and Amadeus for flight lookup.</li>
-              <li>Deployed using Google Cloud Functions and Firebase and implemented user security through Firebase authentication and backend security using Express.js and Node.js middleware.</li>
+              <li>Added interactive features including post liking and commenting to enhance user interaction.</li>
+              <li>Implemented user authentication and account management for secure access and personalized profiles.</li>
+              <li>Designed post sorting functionality for improved content discovery and user experience.</li>
             </div>
-            <img class="project-image" src="./assets/travel-itinerary-pic.PNG" alt="Travel Itinerary Generator" />
+            <img class="project-image" src="./assets/NYC-Events-pic.PNG" alt="Travel Itinerary Generator" />
           </div>
         </div>
-
+      </a>
         <!-- ========================= -->
       </div>
     </div>

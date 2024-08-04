@@ -39,6 +39,7 @@ li::marker{
     justify-content: space-around;
     padding-left:10px;
     padding-right:10px;
+    z-index: 10;
 }
 
 #right-content{
@@ -155,6 +156,23 @@ li::marker{
     text-align: center;
 }
 
-.navbar{
+.navbar-item{
     cursor:pointer;
 }
+
+.project-link{
+    text-decoration: none;
+    color:black;
+}
+
+.project-container {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .project-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
