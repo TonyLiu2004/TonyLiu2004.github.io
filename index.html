@@ -30,7 +30,7 @@
         <p class="navbar-item" onclick="scrollToSection('about-me')">About Me</p>
         <p class="navbar-item" onclick="scrollToSection('projects')">Projects</p>
         <p class="navbar-item" onclick="scrollToSection('skills')">Skills</p>
-        <p>4</p>
+        <p></p>
       </nav>
       <div id="right-content">
         <!-- ========================= -->
@@ -42,13 +42,13 @@
              with full-stack software development with React.js, C++, Python, and Quantum Computing research. Looking for a role where I can grow
              and learn from experienced professionals while contributing my skills and experiences.
           </p>
-          <div class="bullet-points">
+          <!-- <div class="bullet-points">
             <li class="content-p">Fun Fact: I once built and showcased a <a href="https://codefest-97b85.web.app/" target="_blank">website</a> that can help plan entire vacations, 
               including generating itineraries, suggesting activities, and even booking flights and hotels! 
               This project not only sharpened my skills in AI and web development but also sparked my passion for 
               creating practical and user-friendly software solutions.
             </li>
-          </div>
+          </div> -->
         </div>
 
         <!-- ========================= -->
@@ -60,11 +60,13 @@
             <div class="skill">Java</div>
             <div class="skill">JavaScript</div>
             <div class="skill">React.js</div>
+            <div class="skill">Next.js</div>
             <div class="skill">Git</div>
             <div class="skill">Bash</div>
             <div class="skill">Full-Stack Software Engineering</div>
             <div class="skill">Project Management</div>
             <div class="skill">Web Development</div>
+            <div class="skill">Game Development</div>
           </div>
           
         </div>
@@ -72,6 +74,62 @@
 
         <div class="content-container">
           <h1 class="content-heading" id="projects">Projects</h1>
+          <!-- -->
+          <a href="https://flashcardify.net/" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>FlashCardify - Full-Stack Developer</h3>
+                <h4>September 6, 2024</h4>
+              </div>
+              <p class="project-description">An innovative AI-based flashcard application designed to enhance learning through personalized flashcards.</p>
+              <div class="bullet-points">
+                <li>Implemented AI-driven functionality to generate flashcards based on user prompts or uploads, leveraging machine learning to create personalized study materials.</li>
+                <li>Designed and integrated Create, Read, Update, and Delete (CRUD) operations for managing flashcards, decks, and user content.</li>
+                <li>Developed features for users to create, organize, and manage flashcard decks, allowing for structured and thematic study sessions.</li>
+                <li>Built an interactive quizzing system to test users' knowledge and track their progress over time.</li>
+                <li>Implemented sharing functionality to allow users to share decks with others, fostering collaborative learning.</li>
+                <li>Launched FlashCardify publically as an educational tool, using Next.js for fast performance, OpenAI for AI-driven flashcard creation, and Supabase for real-time database management.</li>
+              </div>
+              <div class="image-container">
+                <img class="project-image" src="./assets/flashcardify-pic.PNG" alt="FlashCardify Image" />
+              </div>
+            </div>
+          </a>
+          <!-- -->
+          <a href="http://35.209.100.197/" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>Professor Finder - Full-Stack Developer</h3>
+                <h4>September 1, 2024</h4>
+              </div>
+              <p class="project-description">Developed a web application similar to RateMyProfessor, allowing users to search for professors based on parameters such as subject taught and star rating.</p>
+              <div class="bullet-points">
+                <li>Implemented a chatbot feature that retrieves and displays detailed information about professors, including ratings, subjects, and user reviews.</li>
+                <li>Enabled class enrollment directly from the chat responses, allowing users to enroll in a professor's class with ease.</li>
+                <li>Built using Next.js with OpenAI API for our chatbot and Pinecone API for data storage and retrieval.</li>
+              </div>
+              <div class="image-container">
+                <img class="project-image" src="./assets/professor-finder-pic.PNG" alt="RAG Chatbot Image" />
+              </div>
+            </div>
+          </a>
+          <!-- -->
+          <a href="35.208.90.61" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>Retrieval Augmented Generation (RAG) Chatbot - Full-Stack Developer</h3>
+                <h4>August 27, 2024</h4>
+              </div>
+              <p class="project-description">Developed an advanced RAG-based chatbot for EarthSupremacy Corp, a fictional organization with a "take-over-the-world" theme</p>
+              <div class="bullet-points">
+                <li>Designed and implemented the chatbot to retrieve relevant information from a database and generate coherent, context-specific responses in real time.</li>
+                <li>Deployed on Google Cloud Virtual Machine using the Next.js framework and uses Pinecone for data retrieval and management.</li>
+              </div>
+              <div class="image-container">
+                <img class="project-image" src="./assets/RAG-Chatbot-pic.PNG" alt="RAG Chatbot Image" />
+              </div>
+            </div>
+          </a>
           <!-- -->
           <a href="https://codefest-97b85.web.app/" target="_blank" class="project-link">
             <div class="project-container">
@@ -84,7 +142,9 @@
                 <li>Utilized Google Gemini for itinerary generation, Pexels for image integration, JsPDF and HTML2canvas for itinerary saving, and Amadeus for flight lookup.</li>
                 <li>Deployed using Google Cloud Functions and Firebase and implemented user security through Firebase authentication and backend security using Express.js and Node.js middleware.</li>
               </div>
-              <img class="project-image" src="./assets/travel-itinerary-pic.PNG" alt="Travel Itinerary Generator" />
+              <div class="image-container">
+                <img class="project-image" src="./assets/travel-itinerary-pic.PNG" alt="Travel Itinerary Generator" />
+              </div>
             </div>
           </a>
           <!-- -->
@@ -100,7 +160,9 @@
                 <li>Implemented data management, user authentication, and user profile features using Firebase.</li>
                 <li>Led the project from planning to deployment, ensuring seamless user experience and backend functionality.</li>
               </div>
-              <img class="project-image" src="./assets/NYC-Events-pic.PNG" alt="NYC Events Website" />
+              <div class="image-container">
+                <img class="project-image" src="./assets/NYC-Events-pic.PNG" alt="NYC Events Website" />
+              </div>
             </div>
           </a>
           <!-- -->
@@ -116,10 +178,30 @@
                 <li>Implemented user authentication and account management for secure access and personalized profiles.</li>
                 <li>Designed post sorting functionality for improved content discovery and user experience.</li>
               </div>
-              <img class="project-image" src="./assets/Discussion-Hub-pic.PNG" alt="Discussion Hub" />
+              <div class="image-container">
+                <img class="project-image" src="./assets/Discussion-Hub-pic.PNG" alt="Discussion Hub" />
+              </div>
             </div>
           </a>
           <!-- -->
+          <a href="https://studiosleepwalk.itch.io/refold" target="_blank" class="project-link">
+            <div class="project-container">
+              <div class="project-header">
+                <h3>Refold, a 2D platformer - Programmer</h3>
+                <h4>June 3, 2023</h4>
+              </div>
+              <p class="project-description">A level-based 2D platformer game where the character can change between different forms, each with different abilities.  </p>
+              <div class="bullet-points">
+                <li>Programmed and refined a custom physics system, including gravity manipulation, collision detection, and velocity calculations.</li>
+                <li>Implemented three distinct character forms: the base form, a bird form with gliding abilities, and a frog form that enabled double jumps.</li>
+                <li>Designed and developed intricate levels featuring dynamic obstacles such as moving platforms, falling obstacles, and traps.</li>
+                <li>Developed with GameMaker Studio.</li>
+              </div>
+              <div class="image-container">
+                <img class="project-image" src="./assets/refold-pic.png" alt="Refold Image" />
+              </div>
+            </div>
+          </a>
           <!-- ========================= -->
         </div>
       </div>
