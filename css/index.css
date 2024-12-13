@@ -18,7 +18,7 @@ li::marker{
 
 #left-container{
     width: 30%;
-    background-color: #f0f0f0;
+    background-color: #faf8ff;
     position: fixed;
     height:100%;
     /* overflow: auto; */
@@ -54,7 +54,7 @@ li::marker{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(224, 224, 224);
+    background-color: #d5d2e4;
 }
 
 #profile-pic{
